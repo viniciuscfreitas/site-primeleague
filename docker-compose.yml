@@ -3,8 +3,6 @@ services:
     build: .
     container_name: primeleague-site
     restart: unless-stopped
-    ports:
-      - "8152:80"
     networks:
       - npm_default
 
