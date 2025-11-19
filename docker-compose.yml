@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   primeleague-site:
     build: .
@@ -8,8 +6,8 @@ services:
     ports:
       - "3000:80"
     networks:
-      - npm-network
+      - npm_default
 
 networks:
-  npm-network:
+  npm_default:
     external: true
